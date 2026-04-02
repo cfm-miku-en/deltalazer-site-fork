@@ -54,5 +54,3 @@ SPEC.md
 screenshot*.png
 screenshot.py
 
-# Large hero video (>25MB)
-public/hero/coolvid.gif
