@@ -27,7 +27,7 @@ interface TrianglesBackgroundProps {
 export function TrianglesBackground({
   className = "",
   triangleCount = 40,
-  baseColor = "#2ac965",
+  baseColor = "#b92e35",
   minSize = 20,
   maxSize = 80,
   minSpeed = 0.3,

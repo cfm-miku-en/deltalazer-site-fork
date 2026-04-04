@@ -30,7 +30,7 @@ const docSections = [
     title: "Getting Started",
     icon: Book,
     items: [
-      { title: "What is osu!(v2)?", anchor: "what-is-osuv2" },
+      { title: "What is delta?", anchor: "what-is-delta" },
       { title: "Installation", anchor: "installation" },
       { title: "First Steps", anchor: "first-steps" },
     ],
@@ -137,8 +137,8 @@ export default function DocsPage() {
                     onClick={() => setActiveSection(section.id)}
                     className={`flex items-center gap-2 font-medium text-sm py-1 transition-colors ${
                       activeSection === section.id
-                        ? "text-[#2ac965]"
-                        : "text-[#666] hover:text-[#2ac965]"
+                        ? "text-[#b92e35]"
+                        : "text-[#666] hover:text-[#b92e35]"
                     }`}
                   >
                     <section.icon className="w-4 h-4" />
@@ -149,7 +149,7 @@ export default function DocsPage() {
                       <li key={item.anchor}>
                         <a
                           href={`#${item.anchor}`}
-                          className="text-sm text-[#888] hover:text-[#2ac965] transition-colors block py-0.5"
+                          className="text-sm text-[#888] hover:text-[#b92e35] transition-colors block py-0.5"
                         >
                           {item.title}
                         </a>
@@ -171,20 +171,20 @@ export default function DocsPage() {
             {/* Header */}
             <motion.div variants={fadeInUp} className="mb-12">
               <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                <span className="text-[#2ac965]">osu!(v2)</span> Documentation
+                <span className="text-[#b92e35]">delta</span> Documentation
               </h1>
               <p className="text-lg text-[#666] dark:text-[#a1a1a1] max-w-2xl">
                 Learn how to use section gimmicks, hitobject controls, and all the features 
-                that make osu!(v2) unique.
+                that make delta unique.
               </p>
             </motion.div>
 
             {/* Getting Started */}
             <DocSection id="getting-started" title="Getting Started">
-              <DocSubsection id="what-is-osuv2" title="What is osu!(v2)?">
+              <DocSubsection id="what-is-delta" title="What is delta?">
                 <p>
-                  osu!(v2) is a community-driven fork of osu!lazer that introduces <strong>section gimmicks and hitobject gimmicks</strong>, 
-                  mapper-defined rules that can change gameplay behavior throughout a beatmap. With osu!(v2), 
+                  delta is a community-driven fork of osu!lazer that introduces <strong>section gimmicks and hitobject gimmicks</strong>, 
+                  mapper-defined rules that can change gameplay behavior throughout a beatmap. With delta, 
                   mappers can create maps where HP mechanics, difficulty settings, and even mods change 
                   dynamically from section to section.
                 </p>
@@ -209,17 +209,17 @@ export default function DocsPage() {
 
               <DocSubsection id="installation" title="Installation">
                 <p>
-                  Download the latest release from the <Link href="/download" className="text-[#2ac965] hover:underline">Download page</Link>. 
-                  Extract the ZIP file and run the executable. Debug builds connect to the osu!dev server 
+                  Download the latest release from the <Link href="/download" className="text-[#b92e35] hover:underline">Download page</Link>. 
+                  Extract the ZIP file and run the executable. Debug builds connect to the delta dev server 
                   for safety — your official account remains unaffected.
                 </p>
                 <CodeBlock>
                   {`# Windows
-Extract to C:\\Games\\osuv2
+Extract to C:\\Games\\delta
 Run osu!.exe
 
 # Linux
-Extract to ~/games/osuv2
+Extract to ~/games/delta
 chmod +x osu!
 ./osu!`}
                 </CodeBlock>
@@ -227,24 +227,24 @@ chmod +x osu!
 
               <DocSubsection id="first-steps" title="First Steps">
                 <p>
-                  After launching osu!(v2), you can play existing maps normally or create new maps 
+                  After launching delta, you can play existing maps normally or create new maps 
                   with section gimmicks. To add gimmicks to a map:
                 </p>
                 <ol className="mt-4 space-y-3 ml-4">
                   <li className="flex items-start gap-3">
-                    <span className="flex-shrink-0 w-6 h-6 rounded-full bg-[#2ac965]/10 text-[#2ac965] text-sm font-bold flex items-center justify-center">1</span>
+                    <span className="flex-shrink-0 w-6 h-6 rounded-full bg-[#b92e35]/10 text-[#b92e35] text-sm font-bold flex items-center justify-center">1</span>
                     <span>Open the beatmap editor</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="flex-shrink-0 w-6 h-6 rounded-full bg-[#2ac965]/10 text-[#2ac965] text-sm font-bold flex items-center justify-center">2</span>
+                    <span className="flex-shrink-0 w-6 h-6 rounded-full bg-[#b92e35]/10 text-[#b92e35] text-sm font-bold flex items-center justify-center">2</span>
                     <span>Open the Section Gimmicks toolbox</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="flex-shrink-0 w-6 h-6 rounded-full bg-[#2ac965]/10 text-[#2ac965] text-sm font-bold flex items-center justify-center">3</span>
+                    <span className="flex-shrink-0 w-6 h-6 rounded-full bg-[#b92e35]/10 text-[#b92e35] text-sm font-bold flex items-center justify-center">3</span>
                     <span>Click "Add Section" to create a new gimmick section</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="flex-shrink-0 w-6 h-6 rounded-full bg-[#2ac965]/10 text-[#2ac965] text-sm font-bold flex items-center justify-center">4</span>
+                    <span className="flex-shrink-0 w-6 h-6 rounded-full bg-[#b92e35]/10 text-[#b92e35] text-sm font-bold flex items-center justify-center">4</span>
                     <span>Configure the section's start/end time and enable desired gimmicks</span>
                   </li>
                 </ol>
@@ -521,7 +521,7 @@ GreatOffsetPenaltyHP=-0.03    # HP loss when exceeded`}
             <DocSection id="hitobject-gimmicks" title="Per-Hitobject Gimmicks">
               <DocSubsection id="object-control" title="Object-Level Control">
                 <p>
-                  Beyond section-level gimmicks, osu!(v2) supports <strong>per-hitobject gimmicks</strong>. 
+                  Beyond section-level gimmicks, delta supports <strong>per-hitobject gimmicks</strong>. 
                   This allows you to apply special rules to individual circles, sliders, or spinners.
                 </p>
                 <p className="mt-4">
@@ -552,7 +552,7 @@ GreatOffsetPenaltyHP=-0.03    # HP loss when exceeded`}
             <DocSection id="uncapped-sv" title="Uncapped SV">
               <DocSubsection id="uncapped-sv-overview" title="What Changed">
                 <p>
-                  osu!(v2) includes improvements to slider velocity handling in the editor,
+                  delta includes improvements to slider velocity handling in the editor,
                   including a removal of the legacy 10x effective cap for SV scaling.
                   This makes high-SV gimmick mapping more consistent and less constrained.
                 </p>
@@ -596,7 +596,7 @@ GreatOffsetPenaltyHP=-0.03    # HP loss when exceeded`}
                   href="https://discord.gg/dfPwhRtGVZ" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-[#2ac965] hover:underline inline-flex items-center gap-1"
+                  className="text-[#b92e35] hover:underline inline-flex items-center gap-1"
                 >
                   Discord community
                 </a>
@@ -664,7 +664,7 @@ function InfoBox({
   const styles = {
     info: "bg-blue-500/10 border-blue-500/30 text-blue-700 dark:text-blue-300",
     warning: "bg-yellow-500/10 border-yellow-500/30 text-yellow-700 dark:text-yellow-300",
-    success: "bg-[#2ac965]/10 border-[#2ac965]/30 text-[#1a8a45] dark:text-[#2ac965]",
+    success: "bg-[#b92e35]/10 border-[#b92e35]/30 text-[#8f242a] dark:text-[#b92e35]",
   };
 
   return (

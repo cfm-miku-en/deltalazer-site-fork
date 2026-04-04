@@ -27,16 +27,16 @@ export function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
           <Image 
-            src="/osuv2-logo.png" 
-            alt="osu!(v2) logo" 
+            src="/osudelta.png" 
+            alt="delta logo" 
             width={40} 
             height={40}
             className="object-contain"
             priority
             unoptimized
           />
-          <span className="text-xl font-black tracking-tight">
-            osu!<span className="text-[#2ac965]">(v2)</span>
+          <span className="text-xl font-black tracking-tight text-[#b92e35]">
+            delta
           </span>
         </Link>
 
@@ -52,7 +52,7 @@ export function Navbar() {
                 href={link.href}
                 className={`relative px-4 py-2 text-sm font-medium transition-colors rounded-lg ${
                   isActive
-                    ? "text-[#2ac965]"
+                    ? "text-[#b92e35]"
                     : "text-[#666] hover:text-[#0d0d0d] dark:text-[#a1a1a1] dark:hover:text-white"
                 }`}
               >
@@ -60,7 +60,7 @@ export function Navbar() {
                 {isActive && (
                   <motion.div
                     layoutId="navbar-indicator"
-                    className="absolute inset-0 bg-[#2ac965]/10 rounded-lg -z-10"
+                    className="absolute inset-0 bg-[#b92e35]/10 rounded-lg -z-10"
                     transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                   />
                 )}
@@ -73,7 +73,7 @@ export function Navbar() {
         <div className="hidden md:flex items-center gap-2">
           <ThemeToggle />
           <a
-            href="https://github.com/auroraongithub/osuv2"
+            href="https://github.com/deltalazer/delta"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 text-[#666] hover:text-[#0d0d0d] dark:text-[#a1a1a1] dark:hover:text-white transition-colors"
@@ -92,7 +92,7 @@ export function Navbar() {
           </a>
           <Link
             href="/download"
-            className="inline-flex items-center gap-2 px-4 py-2 bg-[#2ac965] text-white font-medium text-sm rounded-lg hover:bg-[#25b35a] transition-colors"
+            className="inline-flex items-center gap-2 px-4 py-2 bg-[#b92e35] text-white font-medium text-sm rounded-lg hover:bg-[#9f282f] transition-colors"
           >
             <Download className="w-4 h-4" />
             Download
@@ -131,7 +131,7 @@ export function Navbar() {
                   onClick={() => setMobileMenuOpen(false)}
                   className={`block px-4 py-3 rounded-lg text-sm font-medium ${
                     isActive
-                      ? "bg-[#2ac965]/10 text-[#2ac965]"
+                      ? "bg-[#b92e35]/10 text-[#b92e35]"
                       : "text-[#666] hover:bg-[#f5f5f5] dark:hover:bg-[#1a1a1a]"
                   }`}
                 >
@@ -142,7 +142,7 @@ export function Navbar() {
             <div className="flex items-center gap-4 pt-4 border-t border-[#e5e5e5] dark:border-[#2a2a2a]">
               <ThemeToggle />
               <a
-                href="https://github.com/auroraongithub/osuv2"
+                href="https://github.com/deltalazer/delta"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 text-[#666]"

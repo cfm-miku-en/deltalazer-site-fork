@@ -73,7 +73,7 @@ export function TrianglesButton({
         maxSize={25}
         minSpeed={0.3}
         maxSpeed={0.6}
-        baseColor="#2ac965"
+        baseColor="#b92e35"
       />
       <span className="relative z-10 flex items-center gap-2">{children}</span>
     </>

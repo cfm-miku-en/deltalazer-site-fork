@@ -18,8 +18,8 @@ const stagger = {
 const latestRelease = {
   version: "v2.2.1",
   date: "March 31, 2026",
-  windows: "https://github.com/auroraongithub/osuv2/releases/download/v2.2.1/windows-release-v2.zip",
-  linux: "https://github.com/auroraongithub/osuv2/releases/download/v2.2.1/linux-release-v2.zip",
+  windows: "https://github.com/deltalazer/delta/releases/download/v2.2.1/windows-release-v2.zip",
+  linux: "https://github.com/deltalazer/delta/releases/download/v2.2.1/linux-release-v2.zip",
 };
 
 export default function DownloadPage() {
@@ -39,11 +39,11 @@ export default function DownloadPage() {
             variants={fadeInUp}
             className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6"
           >
-            Download <span className="text-[#2ac965]">osu!(v2)</span>
+            Download <span className="text-[#b92e35]">delta</span>
           </motion.h1>
           
           <motion.p variants={fadeInUp} className="text-lg text-[#666] dark:text-[#a1a1a1] mb-4">
-            Latest version: <span className="font-semibold text-[#2ac965]">{latestRelease.version}</span>
+            Latest version: <span className="font-semibold text-[#b92e35]">{latestRelease.version}</span>
             <span className="mx-2">•</span>
             <span className="text-[#888]">{latestRelease.date}</span>
           </motion.p>
@@ -90,7 +90,7 @@ export default function DownloadPage() {
             <InstallStep number={2} title="Extract">
               Extract the ZIP file to a folder of your choice. We recommend a dedicated folder like{" "}
               <code className="px-2 py-0.5 bg-[#f0f0f0] dark:bg-[#1a1a1a] rounded text-sm">
-                C:\Games\osuv2
+                C:\Games\delta
               </code>
             </InstallStep>
 
@@ -121,18 +121,18 @@ export default function DownloadPage() {
           <div className="bg-[#0d0d0d] dark:bg-[#161616] rounded-xl p-6 font-mono text-sm overflow-x-auto">
             <pre className="text-[#a1a1a1]">
               <span className="text-[#888]"># Clone the repository</span>{"\n"}
-              <span className="text-[#2ac965]">git</span> clone https://github.com/auroraongithub/osuv2.git{"\n"}
-              <span className="text-[#2ac965]">cd</span> osuv2{"\n\n"}
+              <span className="text-[#b92e35]">git</span> clone https://github.com/deltalazer/delta.git{"\n"}
+              <span className="text-[#b92e35]">cd</span> delta{"\n\n"}
               <span className="text-[#888]"># Build debug version (Windows)</span>{"\n"}
-              <span className="text-[#2ac965]">dotnet</span> build osu.Desktop/osu.Desktop.csproj -c Debug{"\n\n"}
+              <span className="text-[#b92e35]">dotnet</span> build osu.Desktop/osu.Desktop.csproj -c Debug{"\n\n"}
               <span className="text-[#888]"># Publish for distribution</span>{"\n"}
-              <span className="text-[#2ac965]">dotnet</span> publish osu.Desktop/osu.Desktop.csproj -c Debug -r win-x64 --self-contained false
+              <span className="text-[#b92e35]">dotnet</span> publish osu.Desktop/osu.Desktop.csproj -c Debug -r win-x64 --self-contained false
             </pre>
           </div>
 
           <div className="mt-8 text-center">
             <a
-              href="https://github.com/auroraongithub/osuv2"
+              href="https://github.com/deltalazer/delta"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-[#24292f] hover:bg-[#32383f] text-white rounded-lg font-medium transition-colors"
@@ -159,18 +159,18 @@ function DownloadButton({
   return (
     <motion.a
       href={href}
-      className="relative overflow-hidden flex items-center gap-4 px-8 py-5 bg-white dark:bg-[#161616] border border-[#e5e5e5] dark:border-[#2a2a2a] rounded-xl hover:border-[#2ac965] transition-all group"
+      className="relative overflow-hidden flex items-center gap-4 px-8 py-5 bg-white dark:bg-[#161616] border border-[#e5e5e5] dark:border-[#2a2a2a] rounded-xl hover:border-[#b92e35] transition-all group"
       whileHover={{ scale: 1.02, y: -2 }}
       whileTap={{ scale: 0.98 }}
     >
       <OsuLogoTriangles triangleCount={10} minSize={8} maxSize={20} speed={0.15} />
       
-      <Icon className="w-8 h-8 text-[#2ac965] relative z-10" />
+      <Icon className="w-8 h-8 text-[#b92e35] relative z-10" />
       <div className="relative z-10 text-left">
         <div className="text-sm text-[#888]">Download for</div>
         <div className="font-bold text-lg text-[#0d0d0d] dark:text-white">{platform}</div>
       </div>
-      <Download className="w-5 h-5 ml-auto text-[#2ac965] relative z-10 group-hover:translate-y-0.5 transition-transform" />
+      <Download className="w-5 h-5 ml-auto text-[#b92e35] relative z-10 group-hover:translate-y-0.5 transition-transform" />
     </motion.a>
   );
 }
@@ -186,7 +186,7 @@ function InstallStep({
 }) {
   return (
     <div className="flex gap-4">
-      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#2ac965]/10 text-[#2ac965] font-bold flex items-center justify-center">
+      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#b92e35]/10 text-[#b92e35] font-bold flex items-center justify-center">
         {number}
       </div>
       <div>

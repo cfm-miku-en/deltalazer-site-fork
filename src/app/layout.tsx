@@ -17,8 +17,8 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "osu!(v2) - Community-driven osu!lazer fork",
-    template: "%s | osu!(v2)",
+    default: "delta - Community-driven osu!lazer fork",
+    template: "%s | delta",
   },
   description:
     "osu!lazer fork with section gimmicks and hitobject control. Create maps with per-section rules, custom HP mechanics, forced mods, and more.",
@@ -30,34 +30,34 @@ export const metadata: Metadata = {
     "section gimmicks",
     "beatmap",
   ],
-  authors: [{ name: "osu!(v2) Community" }],
+  authors: [{ name: "delta Community" }],
   icons: {
     icon: [
       { url: "/favicon.png", type: "image/png" },
-      { url: "/osuv2-logo.png", type: "image/png", sizes: "512x512" },
+      { url: "/osudelta.png", type: "image/png", sizes: "512x512" },
     ],
-    apple: "/osuv2-logo.png",
+    apple: "/osudelta.png",
   },
   openGraph: {
-    title: "osu!(v2) - Community-driven osu!lazer fork",
+    title: "delta - Community-driven osu!lazer fork",
     description:
       "Create maps with per-section rules, custom HP mechanics, forced mods, and more.",
     type: "website",
     images: [
       {
-        url: "/osuv2-logo.png",
+        url: "/osudelta.png",
         width: 512,
         height: 512,
-        alt: "osu!(v2) logo",
+        alt: "delta logo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "osu!(v2)",
+    title: "delta",
     description:
       "Community-driven osu!lazer fork with section gimmicks and hitobject control.",
-    images: ["/osuv2-logo.png"],
+    images: ["/osudelta.png"],
   },
 };
 

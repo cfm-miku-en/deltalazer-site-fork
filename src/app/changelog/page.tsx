@@ -33,8 +33,8 @@ const releases = [
       { type: "feature", text: "Added force traceable mod in fun mods" },
     ],
     downloads: {
-      windows: "https://github.com/auroraongithub/osuv2/releases/download/v2.2.1/windows-release-v2.zip",
-      linux: "https://github.com/auroraongithub/osuv2/releases/download/v2.2.1/linux-release-v2.zip",
+      windows: "https://github.com/deltalazer/delta/releases/download/v2.2.1/windows-release-v2.zip",
+      linux: "https://github.com/deltalazer/delta/releases/download/v2.2.1/linux-release-v2.zip",
     },
   },
   {
@@ -49,8 +49,8 @@ const releases = [
       { type: "improvement", text: "Gimmick settings now stay linked to the correct object more reliably" },
     ],
     downloads: {
-      windows: "https://github.com/auroraongithub/osuv2/releases/download/v2.2/windows-release-v2.zip",
-      linux: "https://github.com/auroraongithub/osuv2/releases/download/v2.2/linux-release-v2.zip",
+      windows: "https://github.com/deltalazer/delta/releases/download/v2.2/windows-release-v2.zip",
+      linux: "https://github.com/deltalazer/delta/releases/download/v2.2/linux-release-v2.zip",
     },
   },
   {
@@ -68,8 +68,8 @@ const releases = [
       { type: "improvement", text: "Raised internal SV limits so higher SV values are kept" },
     ],
     downloads: {
-      windows: "https://github.com/auroraongithub/osuv2/releases/download/v2.1/windows-release-v2.zip",
-      linux: "https://github.com/auroraongithub/osuv2/releases/download/v2.1/linux-release-v2.zip",
+      windows: "https://github.com/deltalazer/delta/releases/download/v2.1/windows-release-v2.zip",
+      linux: "https://github.com/deltalazer/delta/releases/download/v2.1/linux-release-v2.zip",
     },
   },
   {
@@ -79,8 +79,8 @@ const releases = [
       { type: "fix", text: "Bug fix on textbox checks" },
     ],
     downloads: {
-      windows: "https://github.com/auroraongithub/osuv2/releases/download/v2.0.1/windows-release-v2.zip",
-      linux: "https://github.com/auroraongithub/osuv2/releases/download/v2.0.1/linux-release-v2.zip",
+      windows: "https://github.com/deltalazer/delta/releases/download/v2.0.1/windows-release-v2.zip",
+      linux: "https://github.com/deltalazer/delta/releases/download/v2.0.1/linux-release-v2.zip",
     },
   },
   {
@@ -114,17 +114,17 @@ const releases = [
       { type: "feature", text: "Added gradual shrink to radius and gradual fade-in to FL" },
       // Editor
       { type: "improvement", text: "Better textbox handling for value entry/confirmation" },
-      { type: "feature", text: "Discord Rich Presence shows \"osu!(v2)\" now" },
+      { type: "feature", text: "Discord Rich Presence shows \"delta\" now" },
     ],
     downloads: {
-      windows: "https://github.com/auroraongithub/osuv2/releases/download/v2.0/windows-release-v2.zip",
-      linux: "https://github.com/auroraongithub/osuv2/releases/download/v2.0/linux-release-v2.zip",
+      windows: "https://github.com/deltalazer/delta/releases/download/v2.0/windows-release-v2.zip",
+      linux: "https://github.com/deltalazer/delta/releases/download/v2.0/linux-release-v2.zip",
     },
   },
 ];
 
 const changeTypeConfig = {
-  feature: { icon: Plus, label: "New", color: "text-[#2ac965] bg-[#2ac965]/10" },
+  feature: { icon: Plus, label: "New", color: "text-[#b92e35] bg-[#b92e35]/10" },
   fix: { icon: Wrench, label: "Fix", color: "text-orange-500 bg-orange-500/10" },
   improvement: { icon: Zap, label: "Improved", color: "text-blue-500 bg-blue-500/10" },
   performance: { icon: Zap, label: "Performance", color: "text-purple-500 bg-purple-500/10" },
@@ -143,16 +143,16 @@ export default function ChangelogPage() {
         {/* Header */}
         <motion.div variants={fadeInUp} className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-[#2ac965]">Changelog</span>
+            <span className="text-[#b92e35]">Changelog</span>
           </h1>
           <p className="text-[#666] dark:text-[#a1a1a1] max-w-2xl mx-auto">
-            Track all updates, new features, and bug fixes for osu!(v2).
+            Track all updates, new features, and bug fixes for delta.
           </p>
           <a
-            href="https://github.com/auroraongithub/osuv2/releases"
+            href="https://github.com/deltalazer/delta/releases"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 mt-4 text-sm text-[#888] hover:text-[#2ac965] transition-colors"
+            className="inline-flex items-center gap-2 mt-4 text-sm text-[#888] hover:text-[#b92e35] transition-colors"
           >
             <GitHubLogoIcon className="w-4 h-4" />
             View all releases on GitHub
@@ -176,7 +176,7 @@ export default function ChangelogPage() {
                 {/* Timeline dot */}
                 <div className="absolute left-0 top-0 hidden md:flex items-center justify-center w-10 h-10 rounded-full bg-white dark:bg-[#0a0a0a] border-2 border-[#e5e5e5] dark:border-[#2a2a2a]">
                   {release.latest ? (
-                    <CheckCircle2 className="w-4 h-4 text-[#2ac965]" />
+                    <CheckCircle2 className="w-4 h-4 text-[#b92e35]" />
                   ) : (
                     <Tag className="w-4 h-4 text-[#888]" />
                   )}
@@ -186,7 +186,7 @@ export default function ChangelogPage() {
                 <div className="md:ml-16">
                   <div className={`rounded-xl border ${
                     release.latest 
-                      ? "border-[#2ac965]/30 bg-[#2ac965]/5" 
+                      ? "border-[#b92e35]/30 bg-[#b92e35]/5" 
                       : release.major
                         ? "border-purple-500/30 bg-purple-500/5"
                         : "border-[#e5e5e5] dark:border-[#2a2a2a] bg-[#f8f9fa] dark:bg-[#161616]"
@@ -197,7 +197,7 @@ export default function ChangelogPage() {
                         {release.version}
                       </h2>
                       {release.latest && (
-                        <span className="px-2 py-0.5 text-xs font-semibold rounded-full bg-[#2ac965] text-white">
+                        <span className="px-2 py-0.5 text-xs font-semibold rounded-full bg-[#b92e35] text-white">
                           Latest
                         </span>
                       )}
@@ -242,7 +242,7 @@ export default function ChangelogPage() {
                       </a>
                       <a
                         href={release.downloads.linux}
-                        className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-lg border border-[#e5e5e5] dark:border-[#2a2a2a] hover:border-[#2ac965] transition-colors"
+                        className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-lg border border-[#e5e5e5] dark:border-[#2a2a2a] hover:border-[#b92e35] transition-colors"
                       >
                         <Download className="w-4 h-4" />
                         Linux
@@ -260,10 +260,10 @@ export default function ChangelogPage() {
           <p className="text-[#888] text-sm">
             Want to contribute or report issues?{" "}
             <a
-              href="https://github.com/auroraongithub/osuv2"
+              href="https://github.com/deltalazer/delta"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#2ac965] hover:underline"
+              className="text-[#b92e35] hover:underline"
             >
               Visit the GitHub repository
             </a>
@@ -272,7 +272,7 @@ export default function ChangelogPage() {
               href="https://discord.gg/dfPwhRtGVZ"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#2ac965] hover:underline"
+              className="text-[#b92e35] hover:underline"
             >
               join our Discord
             </a>

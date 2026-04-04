@@ -19,7 +19,7 @@ const features = [
     title: "Section Gimmicks",
     description:
       "Define custom gameplay rules for each section of your map. Control HP behavior, judgment limits, forced mods, and more. Each section can have completely different rules.",
-    color: "#2ac965",
+    color: "#b92e35",
     media: "/features/section-gimmicks.gif",
   },
   {
@@ -93,7 +93,7 @@ export default function Home() {
       <section className="relative min-h-[calc(100vh-4rem)] flex flex-col items-center justify-center px-6 bg-[#f8f9fa] dark:bg-[#0d0d0d] overflow-hidden">
         <Image
           src="/hero/coolvid.gif"
-          alt="osu!(v2) hero background"
+          alt="delta hero background"
           fill
           priority
           unoptimized
@@ -120,8 +120,8 @@ export default function Home() {
             className="mb-8 flex justify-center"
           >
             <Image 
-              src="/osuv2-logo.png" 
-              alt="osu!(v2) logo" 
+              src="/osudelta.png" 
+              alt="delta logo" 
               width={120} 
               height={120}
               className="object-contain drop-shadow-lg"
@@ -132,10 +132,9 @@ export default function Home() {
           {/* Main title */}
           <motion.h1
             variants={fadeInUp}
-            className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight mb-4"
+            className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight mb-4 text-[#b92e35]"
           >
-            <span className="text-[#0d0d0d] dark:text-white">osu!</span>
-            <span className="text-[#2ac965]">(v2)</span>
+            delta
           </motion.h1>
 
           {/* Subtitle */}
@@ -144,8 +143,8 @@ export default function Home() {
             className="text-xl md:text-2xl text-[#666] dark:text-[#a1a1a1] mb-4 font-light"
           >
             osu!lazer fork with{" "}
-            <span className="text-[#2ac965] font-medium">section gimmicks</span> and{" "}
-            <span className="text-[#2ac965] font-medium">hitobject control</span>
+            <span className="text-[#b92e35] font-medium">section gimmicks</span> and{" "}
+            <span className="text-[#b92e35] font-medium">hitobject control</span>
           </motion.p>
 
           <motion.p
@@ -163,7 +162,7 @@ export default function Home() {
           >
             <Link
               href="/download"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-[#2ac965] text-white font-semibold text-lg rounded-xl hover:bg-[#25b35a] transition-colors"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-[#b92e35] text-white font-semibold text-lg rounded-xl hover:bg-[#9f282f] transition-colors"
             >
               <Download className="w-5 h-5" />
               Download
@@ -171,7 +170,7 @@ export default function Home() {
 
             <Link
               href="/docs"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-white dark:bg-[#1a1a1a] text-[#0d0d0d] dark:text-white font-semibold text-lg rounded-xl border border-[#e5e5e5] dark:border-[#2a2a2a] hover:border-[#2ac965] transition-colors"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-white dark:bg-[#1a1a1a] text-[#0d0d0d] dark:text-white font-semibold text-lg rounded-xl border border-[#e5e5e5] dark:border-[#2a2a2a] hover:border-[#b92e35] transition-colors"
             >
               <BookOpen className="w-5 h-5" />
               Get Started
@@ -184,10 +183,10 @@ export default function Home() {
             className="flex gap-6 justify-center mt-8"
           >
             <a
-              href="https://github.com/auroraongithub/osuv2"
+              href="https://github.com/deltalazer/delta"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-[#888] hover:text-[#2ac965] transition-colors"
+              className="flex items-center gap-2 text-[#888] hover:text-[#b92e35] transition-colors"
             >
               <GitHubLogoIcon className="w-5 h-5" />
               <span className="text-sm">GitHub</span>
@@ -196,7 +195,7 @@ export default function Home() {
               href="https://discord.gg/dfPwhRtGVZ"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-[#888] hover:text-[#2ac965] transition-colors"
+              className="flex items-center gap-2 text-[#888] hover:text-[#b92e35] transition-colors"
             >
               <DiscordLogoIcon className="w-5 h-5" />
               <span className="text-sm">Discord</span>
@@ -210,7 +209,7 @@ export default function Home() {
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
         >
-          <ChevronDown className="w-8 h-8 text-[#2ac965]/50" />
+          <ChevronDown className="w-8 h-8 text-[#b92e35]/50" />
         </motion.div>
       </section>
 
@@ -228,7 +227,7 @@ export default function Home() {
               variants={fadeInUp}
               className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6"
             >
-              Powerful <span className="text-[#2ac965]">Features</span>
+              Powerful <span className="text-[#b92e35]">Features</span>
             </motion.h2>
             <motion.p
               variants={fadeInUp}
@@ -256,7 +255,7 @@ export default function Home() {
       <section className="relative py-20 md:py-24 px-6 bg-[#f8f9fa] dark:bg-[#0d0d0d]">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Join the <span className="text-[#2ac965]">Community</span>
+            Join the <span className="text-[#b92e35]">Community</span>
           </h2>
 
           <p className="text-[#666] dark:text-[#a1a1a1] mb-8 max-w-xl mx-auto">
@@ -282,20 +281,18 @@ export default function Home() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
             <Image 
-              src="/osuv2-logo.png" 
-              alt="osu!(v2) logo" 
+              src="/osudelta.png" 
+              alt="delta logo" 
               width={32} 
               height={32}
               className="object-contain"
             />
-            <span className="text-xl font-bold">
-              osu!<span className="text-[#2ac965]">(v2)</span>
-            </span>
+            <span className="text-xl font-bold text-[#b92e35]">delta</span>
           </div>
 
           <div className="flex items-center gap-6">
             <a
-              href="https://github.com/auroraongithub/osuv2"
+              href="https://github.com/deltalazer/delta"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#888] hover:text-[#0d0d0d] dark:hover:text-white transition-colors"

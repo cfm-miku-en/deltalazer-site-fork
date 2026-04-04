@@ -28,7 +28,7 @@ export function OsuLogoTriangles({
   className = "",
   triangleCount,
   spawnRatio = 1,
-  baseColor = "#2ac965",
+  baseColor = "#b92e35",
   minSize = 70,
   maxSize = 130,
   speed = 1,

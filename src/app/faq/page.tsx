@@ -14,12 +14,12 @@ const faqs = [
     category: "General",
     questions: [
       {
-        q: "What is osu!(v2)?",
-        a: "osu!(v2) is a community-driven fork of osu!lazer that adds section gimmicks and per-hitobject control. It allows mappers to create maps with custom gameplay rules that change throughout the map.",
+        q: "What is delta?",
+        a: "delta is a community-driven fork of osu!lazer that adds section gimmicks and per-hitobject control. It allows mappers to create maps with custom gameplay rules that change throughout the map.",
       },
       {
         q: "Is this official?",
-        a: "No, osu!(v2) is an unofficial community project. It uses osu!lazer as a base but adds experimental features not present in the official client.",
+        a: "No, delta is an unofficial community project. It uses osu!lazer as a base but adds experimental features not present in the official client.",
       },
       {
         q: "Can I use this for ranked play?",
@@ -30,8 +30,8 @@ const faqs = [
         a: "Join our Discord server! The community is active and happy to help with any questions about using section gimmicks or building maps.",
       },
       {
-        q: "Can I play normal osu! maps with osu!(v2)?",
-        a: "Yes! osu!(v2) is fully compatible with standard osu! beatmaps. Maps without section gimmicks will play exactly like they do in osu!lazer.",
+        q: "Can I play normal osu! maps with delta?",
+        a: "Yes! delta is fully compatible with standard osu! beatmaps. Maps without section gimmicks will play exactly like they do in osu!lazer.",
       },
     ],
   },
@@ -131,7 +131,7 @@ const faqs = [
       },
       {
         q: "Can I use negative AR?",
-        a: "Yes! osu!(v2) supports negative AR values, which can create unique reading challenges by hiding approach circles.",
+        a: "Yes! delta supports negative AR values, which can create unique reading challenges by hiding approach circles.",
       },
       {
         q: "How does gradual difficulty override work?",
@@ -168,7 +168,7 @@ const faqs = [
       },
       {
         q: "Do forced mods affect scoring?",
-        a: "Forced mods apply their gameplay effects but don't affect score multipliers in the traditional sense, since osu!(v2) debug builds don't submit to official servers.",
+        a: "Forced mods apply their gameplay effects but don't affect score multipliers in the traditional sense, since delta debug builds don't submit to official servers.",
       },
     ],
   },
@@ -193,7 +193,7 @@ const faqs = [
       },
       {
         q: "Can I create per-hitobject gimmicks?",
-        a: "Yes! osu!(v2) supports per-hitobject gimmicks in addition to section-wide gimmicks. Check the Documentation page for details.",
+        a: "Yes! delta supports per-hitobject gimmicks in addition to section-wide gimmicks. Check the Documentation page for details.",
       },
     ],
   },
@@ -201,7 +201,7 @@ const faqs = [
     category: "Compatibility",
     questions: [
       {
-        q: "Can I open osu!(v2) maps in regular osu!lazer?",
+        q: "Can I open delta maps in regular osu!lazer?",
         a: "Yes! The [BeatmapSectionGimmicks] section is ignored by vanilla clients. The map will play normally without gimmick features.",
       },
       {
@@ -210,11 +210,11 @@ const faqs = [
       },
       {
         q: "Do section gimmicks work in multiplayer?",
-        a: "Section gimmicks work in local multiplayer sessions, but keep in mind that osu!(v2) debug builds connect to osu!dev server, not official servers.",
+        a: "Section gimmicks work in local multiplayer sessions, but keep in mind that delta debug builds connect to osu!dev server, not official servers.",
       },
       {
-        q: "Will osu!(v2) break my existing maps?",
-        a: "No! osu!(v2) is fully backward compatible. All your existing maps will work exactly as they do in osu!lazer.",
+        q: "Will delta break my existing maps?",
+        a: "No! delta is fully backward compatible. All your existing maps will work exactly as they do in osu!lazer.",
       },
     ],
   },
@@ -252,7 +252,7 @@ const faqs = [
     questions: [
       {
         q: "What .NET version is required?",
-        a: "osu!(v2) requires .NET 8 Runtime. If you're using the self-contained builds, it's included. Otherwise, download it from Microsoft.",
+        a: "delta requires .NET 8 Runtime. If you're using the self-contained builds, it's included. Otherwise, download it from Microsoft.",
       },
       {
         q: "How do I build from source?",
@@ -287,14 +287,14 @@ export default function FAQPage() {
           variants={fadeInUp}
           className="text-4xl md:text-5xl font-bold mb-4 text-center"
         >
-          Frequently Asked <span className="text-[#2ac965]">Questions</span>
+          Frequently Asked <span className="text-[#b92e35]">Questions</span>
         </motion.h1>
         
         <motion.p
           variants={fadeInUp}
           className="text-[#666] dark:text-[#a1a1a1] text-center mb-12 max-w-2xl mx-auto"
         >
-          Find answers to common questions about osu!(v2) and section gimmicks.
+          Find answers to common questions about delta and section gimmicks.
         </motion.p>
 
         <div className="grid lg:grid-cols-[240px_1fr] gap-8">
@@ -309,7 +309,7 @@ export default function FAQPage() {
                 <li key={category.category}>
                   <a
                     href={`#${category.category.toLowerCase().replace(/\s+/g, "-")}`}
-                    className="text-sm text-[#666] hover:text-[#2ac965] transition-colors"
+                    className="text-sm text-[#666] hover:text-[#b92e35] transition-colors"
                   >
                     {category.category}
                   </a>
