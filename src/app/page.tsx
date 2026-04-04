@@ -18,7 +18,7 @@ const features = [
     id: "section-gimmicks",
     title: "Section Gimmicks",
     description:
-      "Define custom gameplay rules for each section of your map. Control HP behavior, judgment limits, forced mods, and more. Each section can have completely different rules.",
+      "Set custom gameplay rules for each section of your map. Control HP behavior, judgment limits, forced mods, and more. Each section can have completely different rules.",
     color: "#b92e35",
     media: "/features/section-gimmicks.gif",
   },
@@ -26,7 +26,7 @@ const features = [
     id: "hp-gimmicks",
     title: "HP Gimmicks",
     description:
-      "Take full control of health mechanics. Set custom HP values for each judgment, or enable ReverseHP mode where inaccurate hits can heal and perfects drain.",
+      "Take control of health mechanics. Set custom HP values for each judgment, or use Reverse HP mode where inaccurate hits can heal and perfects drain.",
     color: "#ef4444",
     media: "/features/hp-gimmicks.gif",
   },
@@ -34,7 +34,7 @@ const features = [
     id: "count-limits",
     title: "Count Limits",
     description:
-      "Limit how many 100s, 50s, or even 300s a player can get per section. Create precision challenges that push players to their limits.",
+      "Limit how many 100s, 50s, or even 300s a player can get per section. Challenge and push players to their limits.",
     color: "#f59e0b",
     media: "/features/count-limits.gif",
   },
@@ -42,7 +42,7 @@ const features = [
     id: "forced-mods",
     title: "Forced Mods",
     description:
-      "Force specific mods for individual sections. Create maps where HD activates during choruses, or HR kicks in for the drop.",
+      "Force specific mods for individual sections. Create maps where HD activates during choruses, or HR for the drop.",
     color: "#8b5cf6",
     media: "/features/forced-mods.gif",
   },
@@ -58,7 +58,7 @@ const features = [
     id: "offset-penalty",
     title: "Great Offset Penalty",
     description:
-      "Punish imprecise 300s with HP penalties. Set a threshold where hitting within the 300 window but outside your custom threshold costs health.",
+      "Punish imprecise 300s, hitting within the 300 window but outside your custom threshold costs HP.",
     color: "#ec4899",
     media: "/features/offset-penalty.gif",
   },
@@ -66,7 +66,7 @@ const features = [
     id: "uncapped-sv",
     title: "Uncapped SV",
     description:
-      "Shift-drag slider velocity editing is stabilised and the old 10x legacy cap is removed, enabling far more extreme SV control for advanced gimmick mapping.",
+      "10x legacy SV cap is removed, allowing far more extreme SV control for advanced mapping.",
     color: "#f97316",
     media: "/features/uncapped-sv.gif",
   },
@@ -134,7 +134,7 @@ export default function Home() {
             variants={fadeInUp}
             className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight mb-4 text-[#b92e35]"
           >
-            delta
+            deltalazer
           </motion.h1>
 
           {/* Subtitle */}
