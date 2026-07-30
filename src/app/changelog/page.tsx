@@ -250,7 +250,7 @@ const changeTypeConfig = {
 export default function ChangelogPage() {
     return (
         <main className="flex-1 py-16 md:py-24 px-6 bg-white dark:bg-[#0a0a0a]">
-            <motion.div className="border-amber-300 bg-amber-300/20 w-4xl mx-auto border box-content p-6 mb-8 rounded-xl">
+            <motion.div className="border-amber-300 bg-amber-300/20 max-w-4xl mx-auto border box-content p-6 mb-8 rounded-xl">
                 <span>
                     <span className="font-bold">hiya~!</span> this page doesn't
                     contain the latest changelog for deltalazer anymore, please
