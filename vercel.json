@@ -1,9 +1,9 @@
 {
   "redirects": [
-    { "source": "/download/:path*", "destination": "https://delta.mikuuu.xyz/home/download", "statusCode": 301 },
-    { "source": "/changelog/:path*", "destination": "https://delta.mikuuu.xyz/home/changelog", "statusCode": 301 },
-    { "source": "/docs/:path*", "destination": "https://delta.mikuuu.xyz/wiki/en/Delta/Documentation", "statusCode": 301 },
-    { "source": "/faq/:path*", "destination": "https://delta.mikuuu.xyz/wiki/en/Delta/FAQ", "statusCode": 301 },
-    { "source": "/:path*", "destination": "https://delta.mikuuu.xyz/", "statusCode": 301 }
+    { "source": "/download(/.*)?", "destination": "https://delta.mikuuu.xyz/home/download", "statusCode": 301 },
+    { "source": "/changelog(/.*)?", "destination": "https://delta.mikuuu.xyz/home/changelog", "statusCode": 301 },
+    { "source": "/docs(/.*)?", "destination": "https://delta.mikuuu.xyz/wiki/en/Delta/Documentation", "statusCode": 301 },
+    { "source": "/faq(/.*)?", "destination": "https://delta.mikuuu.xyz/wiki/en/Delta/FAQ", "statusCode": 301 },
+    { "source": "/(.*)", "destination": "https://delta.mikuuu.xyz/", "statusCode": 301 }
   ]
 }
